@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Inicio - Gestión de Pagos de Agua</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <h1>Gestión de Pagos de Agua - Tierra Blanca</h1>
+    <nav>
+        <ul>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#administradores">Administradores</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Carrusel de Imágenes -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/1.png" class="d-block w-100" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/2.png" class="d-block w-100" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/3.png" class="d-block w-100" alt="Imagen 3">
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<!-- Sección para Usuarios -->
+<section id="usuarios">
+    <h2>¡Bienvenido, Residente!</h2>
+    <p>Accede a tu historial de pagos, o bien accede a tu recibo mas reciente.</p>
+    <p>O mejor aun, puedes acceder a Transparencia donde puedes ver quienes han realizado sus pagos</p>
+    <a href="usuario/login.html" class="btn btn-primary">Buscar Pago</a>
+    <a href="usuario/registro.html" class="btn btn-secondary">Mi Historial</a>
+    <a href="usuario/registro.html" class="btn btn-secondary">Transparencia</a>
+</section>
+
+<!-- Sección para Administradores -->
+<section id="administradores">
+    <h2>Panel de Administración</h2>
+    <p>Registra Personas, Zonas y lo mejor registra los pagos tu como administrador.</p>
+    <p>Obterva cuando sea recaudado en general en una marguen de fechas.</p>
+    <a href="admin/login.html" class="btn btn-primary">Iniciar Sesión</a>
+</section>
+
+<!-- Información adicional -->
+<section id="informacion">
+    <div class="container">
+        <h2>¿Qué ofrecemos?</h2>
+        <p>Nuestra plataforma ofrece:</p>
+        <ul>
+            <li>Transparencia en los pagos de agua.</li>
+            <li>Acceso fácil al historial de pagos.</li>
+            <li>Calculo por maguen. Cuanto sea recaudado en un marguen de fechas?</li>
+            <li>Soporte técnico y atención personalizada.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Pie de Página -->
+<footer>
+    <p>&copy; 2024 Ricardo Escobedo - Doblenet</p>
+</footer>
+
+<!-- Scripts de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
