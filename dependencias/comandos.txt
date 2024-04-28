@@ -1,0 +1,3 @@
+CREATE USER 'dni'@'localhost' IDENTIFIED BY 'MinuzaFea265/';
+GRANT ALL PRIVILEGES ON *.* TO 'dni'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;

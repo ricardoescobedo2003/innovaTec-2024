@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comentarios - Gestión de Pagos de Agua</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Comentarios</h1>
+</header>
+
+<div class="container">
+    <div id="comentarios-lista"></div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Ricardo Escobedo - Doblenet</p>
+</footer>
+
+<!-- Script de JavaScript para cargar los comentarios -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Función para cargar los comentarios al cargar la página
+    cargarComentarios();
+
+    // Función para cargar los comentarios desde PHP
+    function cargarComentarios() {
+        $.ajax({
+            url: 'cargar_comentarios.php',
+            type: 'GET',
+            success: function(response) {
+                $('#comentarios-lista').html(response);
+            }
+        });
+    }
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+</html>

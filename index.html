@@ -6,16 +6,43 @@
 <title>Página de Inicio - Gestión de Pagos de Agua</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles.css">
+<style>
+    /* Estilos específicos para la sección de comentarios */
+    #comentarios {
+        background-color: #f8f9fa;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+
+    #comentarios h2 {
+        margin-bottom: 20px;
+    }
+
+    #comentarios form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #comentarios .form-group {
+        margin-bottom: 20px;
+    }
+
+    #comentarios textarea {
+        resize: vertical;
+    }
+</style>
 </head>
 <body>
 
-<!-- Encabezado -->
 <header>
     <h1>Gestión de Pagos de Agua - Tierra Blanca</h1>
     <nav>
         <ul>
             <li><a href="#usuarios">Usuarios</a></li>
             <li><a href="#administradores">Administradores</a></li>
+            <li><a href="#administradores">Administradores</a></li>
+
         </ul>
     </nav>
 </header>
@@ -64,7 +91,7 @@
     <h2>Panel de Administración</h2>
     <p>Registra Personas, Zonas y lo mejor registra los pagos tu como administrador.</p>
     <p>Obterva cuando sea recaudado en general en una marguen de fechas.</p>
-    <a href="admin/login.html" class="btn btn-primary">Iniciar Sesión</a>
+    <a href="/login/index.html" class="btn btn-primary">Iniciar Sesión</a>
 </section>
 
 <!-- Información adicional -->
@@ -80,7 +107,27 @@
         </ul>
     </div>
 </section>
-
+<!-- Sección de Comentarios -->
+<section id="comentarios">
+  <div class="container">
+      <h2>Envía tus Comentarios</h2>
+      <form id="commentForm" method="POST" action="comment.php">
+          <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="comment">Comentario:</label>
+              <textarea id="comment" name="comment" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Comentario</button>
+      </form>
+  </div>
+</section>
 <!-- Pie de Página -->
 <footer>
     <p>&copy; 2024 Ricardo Escobedo - Doblenet</p>
